@@ -1,0 +1,251 @@
+html {
+    font-size: 62.5%;
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+
+        background-color: darkseagreen;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+
+    }
+
+    .container {
+        /* background-color: aqua; */
+        max-width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        /* added for nav-toggle positioning */
+        position: relative;
+    }
+
+    header {
+        background: #136c72;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .header_mobile {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 0.75rem;
+    }
+
+
+    .logo__image {
+        width: 50px;
+        height: 50px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 380px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .section-title {
+        color: #87629a;
+    }
+
+    .btn {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #23424a;
+        font-weight: 900;
+        background-color: #38cfd9;
+        border-radius: 100px;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        opacity: 0.75;
+    }
+
+    .nav {
+        width: 100%;
+        visibility: hidden;
+        height: 0;
+        display: block;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+
+    .nav-toggle {
+        cursor: pointer;
+        border: none;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: auto 0;
+        padding: 0em;
+        border-radius: 50%;
+        background: #072a2d;
+        color: white;
+        transition: opacity 250ms ease;
+        display: block;
+    }
+
+    .nav-toggle:focus,
+    .nav-toggle:hover {
+        opacity: 0.75;
+    }
+
+    .hamburger {
+        width: 50%;
+        position: relative;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        background: white;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+        width: 100%;
+    }
+
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+
+
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+    }
+
+
+    .nav__list {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__list--primary :first-child {
+        margin-top: 0;
+    }
+
+
+
+
+    .nav__link {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav__link:focus,
+    .nav__link:hover {
+        opacity: 0.7;
+    }
+
+    .nav__item {
+        list-style: none;
+        margin:  0.75em;
+    }
+
+    .nav__item2 {
+        list-style: none;
+
+        padding-bottom: 1.2rem;
+    }
+
+    .nav__link--button {
+        padding: 0.25em 0.75em;
+        background: #fff;
+        color: #23424a;
+        border-radius: 100px;
+    }
+
+    /* @note da qui comincia articolo introduttivo */
+    .testo_article {
+        color: #312c2c;
+        text-align: justify;
+        padding: 0.75rem;
+   margin: 0;
+    }
+
+    .row1,
+    .sezione1 {
+        max-width: 380px;
+        margin: 0 auto;
+
+    }
+
+    .MS_ButtonLink,
+    .MS_Close {
+        display: inline-block;
+        background-color: #ff6600;
+        color: #fff;
+        text-decoration: none;
+        padding: 4px 8px;
+        cursor: pointer;
+    }
+
+
+    .cigno {
+        margin: 0;
+    }
+
+    /* @note Qui comincia la prima media query */
+
+    @media (min-width:1000px) {
+        .nav-toggle {
+            display: none;
+        }
+
+        .header_mobile {
+            display: block;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 0.1rem;
+
+        }
+
+        .nav,
+        .nav__list {
+            visibility: visible;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 1rem;
+        }
+ .nav__item {
+     list-style: none;
+     margin: 0 1em;
+ }
+        .nav__item2 {
+            padding-bottom: 0rem
+        }
+
+        .nav__list :first-child {
+            margin-top: auto;
+        }
+    }
+}

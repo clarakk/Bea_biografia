@@ -1,0 +1,45 @@
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav");
+
+navToggle.addEventListener("click", () => {
+  nav.classList.toggle("nav--visible");
+});
+
+$(document).ready(function () {
+  //classi ai div
+  //   $("#imGroup_1 > div").each(function (index) {
+  //     if ($(this).hasClass("imHGroup") || $(this).hasClass("imEGroup"))
+  //       $(this).addClass("row" + (index + 1));
+  //     else {
+  //       $(this).wrap(
+  //         "<div class='row" + (index + 1) + "' style='width: 100%;'></div>"
+  //       );
+  //     }
+  //   });
+  $(".row1").wrapAll("<div class='MScontent'></div>");
+  //sezioni nascoste
+  $(".row3").addClass("sezione1");
+  $(".row4").addClass("sezione2");
+  $(".row5").addClass("sezione3");
+  $(".row6").addClass("sezione4");
+
+  //   $(".MScontent > div").css("float", "left");
+  $("div[class*='sezione']").hide();
+
+  $(".MS_ButtonLink").click(function () {
+    var id = $(this).attr("href").slice(1);
+    $("html, body").animate(
+      {
+        scrollTop: 100,
+      },
+      500
+    );
+    $("div.MScontent").slideUp("slow");
+    $("." + id).slideDown("slow");
+    return false;
+  });
+  $(".MS_Close").click(function () {
+    $("div[class*='sezione']").slideUp("slow");
+    $("div.MScontent").slideDown("slow");
+  });
+});
