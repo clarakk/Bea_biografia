@@ -1,8 +1,11 @@
+
+
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
 
 navToggle.addEventListener("click", () => {
   nav.classList.toggle("nav--visible");
+  
 });
 
 $(document).ready(function () {
@@ -28,18 +31,34 @@ $(document).ready(function () {
 
   $(".MS_ButtonLink").click(function () {
     var id = $(this).attr("href").slice(1);
-    $("html, body").animate(
-      {
-        scrollTop: 100,
-      },
-      500
+    $(".row1, sezione1").animate(
+      { scrollTop: 100,},
+    500
     );
     $("div.MScontent").slideUp("slow");
     $("." + id).slideDown("slow");
-    return false;
+      $(".cover").css("display", "none");
+    return false;  
   });
+
   $(".MS_Close").click(function () {
     $("div[class*='sezione']").slideUp("slow");
-    $("div.MScontent").slideDown("slow");
+    $("div.MScontent").slideDown("slow"); 
+      $(".cover").css("display", "block");
+   $(".row1, .sezione1").css("display", "none")
+  }); 
   });
+
+$(".button").click(function () {
+  $(".cover").css("display", "none");
+  $(".row1").css("display", "block");
 });
+  
+$(".button2").click (function () {
+  $(".cover").css("display", "block");
+  $(".row1").css("display", "none");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+})
+
+
+
