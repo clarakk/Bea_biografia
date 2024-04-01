@@ -50,14 +50,14 @@ $(document).ready(function () {
   });
 
 $(".button").click(function () {
-  $(".cover").css("display", "none");
+  // $(".cover").css("display", "none");
   $(".row1").css("display", "block");
 });
   
 $(".button2").click (function () {
   $(".cover").css("display", "block");
   $(".row1").css("display", "none");
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  // window.scrollTo({ top: 0, behavior: "smooth" });
 })
 
 
