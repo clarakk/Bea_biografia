@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
 }
-
+:root { --white: #ffffff;
+ }
+ body {
+    background: rgb(212, 209, 224);
+        background: rgb(210, 224, 209);
+            background: radial-gradient(circle, rgba(210, 224, 209, 0.5206343279499299) 25%, rgba(191, 220, 205, 1) 85%);
+ width: 100%;
+ }
+ 
 /* ! Reset */
 body,
 html {
@@ -86,8 +94,10 @@ p {
     padding: 0.75rem;
 }
 
+
 .container {
-    background-color: rgb(134, 191, 134);
+
+    /* background-color: rgb(134, 191, 134); */
     max-width: 1200px;
     /* position: relative; */
     margin: 0 auto;
@@ -325,7 +335,7 @@ h1 {
 .spacer {
     height: 50px;
     background-color: rgb(134, 191, 134);
-    border: 3px solid blue;
+
 }
 
 p {
@@ -346,7 +356,7 @@ a:hover {
 .testo_article {
     color: #312c2c;
     text-align: justify;
-    padding:  0.75rem;
+    padding: 0.75rem;
 
 }
 
@@ -371,11 +381,12 @@ a:hover {
 
 .cigno {
     position: relative;
-    padding-top: 30px;
+    margin: 30px 0 30px 0;
 }
 
-.cigno>h2 {
+.cigno h2 {
     text-align: center;
+    color: var(--white);
     padding: 0 20px;
 }
 
@@ -387,13 +398,28 @@ a:hover {
 .card {
 
     margin: 0 1.5%;
-    background: #fff;
+    background: var(--white);
     border-radius: 10px;
 }
 
 .card__image {
-    width: 100%;
+    width: 70%;
     height: auto;
+}
+.chi_siamo__title {
+    border: 3px solid red;
+    color: var(--white);
+    margin-top: 90px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.card_text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* @note Qui comincia la prima media query */
@@ -436,9 +462,13 @@ a:hover {
         margin-top: auto;
     }
 
+    /* CARDS */
+    
+
     .card {
         width: 30%;
         margin-bottom: 2rem;
+        /* display: flex; */
     }
 
     .biografe {
@@ -450,4 +480,10 @@ a:hover {
         /* justify-content: space-between; */
 
     }
+
+    .card__image {
+        margin-top: 1rem;
+
+    }
+
 }
