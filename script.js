@@ -45,11 +45,21 @@ $(document).ready(function () {
     $("div[class*='sezione']").slideUp("slow");
     $("div.MScontent").slideDown("slow"); 
       $(".cover").css("display", "block");
-    $(".row1, .sezione1").css("display", "none")
-    $(".button").html("Rileggi presentazione")
-    $(".button2").html("Il cigno dentro di noi");
+    $(".row1, .sezione1").css("display", "none");
+ 
+    $(".button").html("Rileggi presentazione");
+    
+    $(".button2").html("Il cigno dentro di noi");  
+    
+     
+      $('html, body').animate({scrollTop: 0}, 'slow');
+      return false;
+    });     
   }); 
-  });
+     
+
+  
+
 
 $(".button").click(function () {
   $(".cover").css("display", "none");
@@ -66,3 +76,8 @@ function myReloadFunction() {
 }
 
 
+
+$(".nav ul li a").click(function () {
+console.log("ciao");
+  
+});
