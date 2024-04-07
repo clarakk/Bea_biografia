@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        /* Stili per il modulo di contatto */
+        body {
+            font-family: Arial, sans-serif; /* Utilizza il font Arial o un font sans-serif di fallback */
+        }
+
+        .form {
+            width: 80%; /* Larghezza del modulo */
+            margin: 0 auto; /* Centra il modulo */
+        }
+
+        table {
+            width: 100%; /* Imposta la larghezza della tabella al 100% */
+        }
+
+        table td {
+            padding: 10px; /* Aggiunge spazio interno alle celle della tabella */
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%; /* Imposta la larghezza degli input e delle textarea al 100% */
+            padding: 8px; /* Aggiunge spazio interno agli input e alle textarea */
+            font-size: 16px; /* Cambia la dimensione del font */
+            border: 1px solid #ccc; /* Aggiunge un bordo sottile */
+            border-radius: 5px; /* Aggiunge un bordo arrotondato */
+        }
+
+        input[type="submit"] {
+            width: auto; /* Imposta la larghezza del pulsante "Invia" automaticamente */
+            padding: 10px 20px; /* Aggiunge spazio interno al pulsante */
+            font-size: 18px; /* Cambia la dimensione del font */
+            background-color: #007bff; /* Cambia il colore di sfondo del pulsante */
+            color: #fff; /* Cambia il colore del testo del pulsante */
+            border: none; /* Rimuove il bordo */
+            border-radius: 5px; /* Aggiunge un bordo arrotondato */
+            cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="/cgi-bin/FormMail.pl" method="POST">
+        <input type=hidden name="recipient" value="claracav@gmail.com">
+        <input type=hidden name="subject" value="biografe">
+        <table border="0" cellspacing="0" cellpadding="5" align="center">
+            <tr>
+                <td><b>Nome e Cognome:</b></td>
+                <td align="right"><input type=text name="realname"></td>
+            </tr>
+            <tr>
+                <td><b>Email:</b></td>
+                <td align="right"><input type=text name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Messaggio:</b></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="messaggio" cols="40" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="Submit" value="Invia"></td>
+            </tr>
+        </table>
+        <input type=hidden name="required" value="email,realname,messaggio">
+    </form>
+</body>
+</html>
+
+</body>
+</html>
+

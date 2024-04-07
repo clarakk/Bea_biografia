@@ -127,9 +127,9 @@
 
             </article>
         </section>
-        <a name="chi_siamo">
-        <section class="chi_siamo"></a>
-
+     
+        <section class="chi_siamo">
+            <a name="chi_siamo"></a>
             <div class="chi_siamo__title">
                
                 <h1>Chi siamo</h1>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img" <div class="card__img">
+               <div class="card__img">
                         <img class="card__image" src="https://source.unsplash.com/category/nature&3/400x260"
                             alt="Nature">
                     </div>
@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img" <div class="card__img">
+                    <div class="card__img">
                         <img class="card__image" src="https://source.unsplash.com/category/nature&4/400x260"
                             alt="Nature">
                     </div>
@@ -193,7 +193,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img" <div class="card__img">
+                    <div class="card__img">
                         <img class="card__image" src="https://source.unsplash.com/category/nature&5/400x260"
                             alt="Nature">
                     </div>
@@ -208,7 +208,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img" <div class="card__img">
+                   <div class="card__img">
                         <img class="card__image" src="https://source.unsplash.com/category/nature&6/400x260"
                             alt="Nature">
                     </div>
@@ -225,29 +225,42 @@
                     </div>
                 </div>
             </div>
-            <footer class="footer">
+            <section class="formazione">
                 <div class="formazione">
-                    <h2>La nostra formazione</h2>
+                    <h2 class="formazione">La nostra formazione</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eos dolor veritatis adipisci porro a facilis, necessitatibus obcaecati architecto cumque eveniet est. Nostrum tempora temporibus error neque modi perferendis eum ducimus exercitationem totam, dolorum aliquam suscipit voluptate quia alias explicabo aspernatur dolores odio labore deleniti vitae. Id, molestias. Sit, nulla. Quis, vel animi velit voluptates odit expedita est culpa tempore nesciunt fugit neque ipsam nobis. Perspiciatis, dicta delectus? Animi repellendus neque nesciunt. Quam unde, dolor laudantium consequatur quae sed. Necessitatibus recusandae sequi aut dolorum maiores eaque atque illo, ratione voluptatem qui quaerat beatae nihil ducimus! Aliquid illo sequi veritatis nemo!</p>
+                    <div class="link_utili">
+                        <h2>Link utili</h2>
+                        <h3>Link1</h3>
+                        <h3>Link2</h3>
+                        <h3>Link3</h3>
+                       
+                    </div>
                 </div>
+            </section>
+            <footer class="footer">
+                
 
-                <div class="eventi">
+                <div class="footer_item">
+                    <h2> Il nostro team</h2>
+                    <h3>Coordinazione progetto</h3>
+                    <h3>Segreteria</h3>
+                    <h3>Contatti</h3>
+                </div>
+                <div class="footer_item">
                     <h2> Le nostre attività</h2>
                     <h3>Incontri</h3>
                     <h3>Seminari</h3>
                     <h3>Conferenze</h3>
                 </div>
 
-                <div class="sedi">
-                        <h2>Sedi</h2>
+                <div class="footer_item">
+                        <h2>Contatti</h2>
+                        <h3>Dove siamo</h3>
+                        <h3><a href="mailto:claracav@gmail.com">Mandaci un'email</a></h3>
                     </div>
 
-                    <div class="link_utili">
-                        <h2>Link utili</h2>
-                        <h3>Link1</h3>
-                        <h3>Link2</h3>
-                        <h3>Link3</h3>
-                        <h3>Scrivici</h3>
-                    </div>
+                   
 
             </footer>
 
@@ -257,32 +270,7 @@
 
             <script src="script.js"></script>
 
-            <form class="form">
-                <form action="/cgi-bin/FormMail.pl" method="POST">
-                    <input type=hidden name="recipient" value="clarac@altervista.org">
-                    <input type=hidden name="subject" value="biografe">
-                    <table border="0" cellspacing="0" cellpadding="5" align="center">
-                        <tr>
-                            <td><b> Nome e Cognome:</b></td>
-                            <td align="right"><input type=text name="realname"></td>
-                        </tr>
-                        <tr>
-                            <td><b>Email:</b></td>
-                            <td align="right"><input type=text name="email"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><b>Messaggio:</b></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><textarea name="messaggio" cols="40" rows="5"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" align="center"><input type="Submit" value="Invia"></td>
-                        </tr>
-                    </table>
-                    <input type=hidden name="required" value="email,realname,messaggio">
-                </form>
-
+           
 </body>
 
 </html>
