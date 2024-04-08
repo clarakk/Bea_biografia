@@ -68,9 +68,7 @@ $(".button").click(function () {
   
 $(".button2").click (function () {
   $(".cover").css("display", "block");
-  // $(".row1").css("display", "none");
-  // window.scrollTo({ top: 0, behavior: "smooth" });
-})
+  })
 function myReloadFunction() {
   window.location.reload();
 }

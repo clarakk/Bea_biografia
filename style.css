@@ -164,7 +164,7 @@ p {
 }
 
 .container {
-     background: linear-gradient(180deg, rgba(28, 23, 23, 0) 0%, rgba(167, 148, 131, 0.4) 100%), url() no-repeat center center;
+     background: linear-gradient(180deg, rgba(28, 23, 23, 0) 0%, rgba(118, 105, 94, 0.4) 100%), url() no-repeat center center;
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
@@ -400,7 +400,6 @@ h1 {
 .spacer {
     height: 50px;
     /* background-color: rgb(134, 191, 134); */
-
 }
 
 p {
@@ -431,7 +430,7 @@ a:hover {
 .sezione1 {
     margin: 2rem auto;
     padding: 2rem;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     /* height: 80vh; */
 }
 
@@ -451,7 +450,7 @@ a:hover {
 
 .cigno {
     position: relative;
-   border: 2px solid red;
+  
     margin: 30px 0 30px 0;
 }
 
@@ -468,7 +467,7 @@ a:hover {
 
 .card {
 
-    margin: 0 1.5%;
+    margin:  2rem;
     background: var(--white);
     border-radius: 10px;
 }
@@ -476,12 +475,12 @@ a:hover {
 .card__image {
     width: 70%;
     height: auto;
+    padding-top: 1rem;
 }
 
 .chi_siamo__title {
         color: var(--light_black);   
-    margin-top: 60px;
-    padding-top: 70px;
+       padding-top: 70px;
     text-align: center;
 }
 
@@ -493,14 +492,17 @@ a:hover {
     margin: 0 auto;
 }
 
-.formazione {
+.accompagnamento {
     color: var(--light_black);
-     border: 2px solid red;
+     /* border: 2px solid red; */
+     font-size: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+   
+    padding 70px 20px 0 20px;
 }
-.formazione p {    
+.accompagnamento p {    
     text-align: justify;
+    padding: 1rem;
 }
 .link_utili {
     text-align: left;
@@ -510,9 +512,39 @@ a:hover {
     text-align:left ;
     margin: 2rem ;
 }
+
+
+.footer-top__social {
+         color: #3c4043;
+         margin-bottom: 3rem;
+}
+
+.btn-white {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: #23424a;
+    font-weight: 900;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 4px 4px 12px 1px rgba(32,33,36,.08);
+    color: #3c4043;    
+    padding: 5px 8px; }
+  
+  
+  
+  .footer-top__icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
 .form {
     display: block;
 }
+
+
 /* @note Qui comincia la prima media query */
 
 @media (min-width:1000px) {
@@ -601,7 +633,5 @@ font-size: 2.3rem;
        /* align-content: center; */
     }
     
-.form td {
-    font-size: 40px;
-}
+
 }
